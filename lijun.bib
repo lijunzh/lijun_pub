@@ -145,4 +145,18 @@
   url       = {http://library.seg.org/doi/abs/10.1190/segam2017-17730445.1},
 }
 
+@Conference{Zhu2017AGU,
+  author    = {Lijun Zhu and Zefeng Li and Chenyu Li and Baoshan Wang and Zhihan Chen and James H. McClellan and Zhigang Peng},
+  title     = {R Machine-Learning Inspired Seismic Phase Detection for Aftershocks of the 2008 MW7.9 Wenchuan Earthquake},
+  booktitle = {Abstract presented at 2017 Fall Meeting, AGU},
+  year      = {2017},
+  number    = {S41D-08},
+  address   = {New Orlean, LA},
+  month     = dec,
+  abstract  = {Spatial-temporal evolution of aftershocks is important for illumination of earthquake physics and for rapid response of devastative earthquakes. To improve aftershock catalogs of the 2008 MW7.9 Wenchuan earthquake in Sichuan, China, Alibaba cloud and China Earthquake Administration jointly launched a seismological contest in May 2017 [Fang et al., 2017]. This abstract describes how we handle this problem in this competition. We first used Short-Term Average/Long-Term Average (STA/LTA) and Kurtosis function to obtain over 55000 candidate phase picks (P or S). Based on Signal to Noise Ratio (SNR), about 40000 phases (P or S) are selected. So far, these 40000 phases have a hit rate of ~40% among the manually picks. The causes include that 1) there exist false picks (neither P nor S); 2) some P and S arrivals are mis-labeled. To improve our results, we correlate the 40000 phases over continuous waveforms to obtain the phases missed by during the first pass. This results in ~120,000 events. After constructing an affinity matrix based on the cross-correlation for newly detected phases, subspace clustering methods [Vidal 2011] are applied to group those phases into separated subspaces. Initial results show good agreement between empirical and clustered labels of P phases. Half of the empirical S phases are clustered into the P phase cluster. This may be a combined effect of 1) mislabeling isolated P phases to S phases and 2) clustering errors due to a small incomplete sample pool. Phases that were falsely detected in the initial results can be also teased out. To better characterize P and S phases, our next step is to apply subspace clustering methods directly to the waveforms, instead of using the cross-correlation coefficients of detected phases. After that, supervised learning, e.g., a convolutional neural network, can be employed to improve the pick accuracy. Updated results will be presented at the meeting.},
+  owner     = {lijun},
+  timestamp = {2017-12-27},
+  url       = {https://agu.confex.com/agu/fm17/meetingapp.cgi/Paper/279959},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
