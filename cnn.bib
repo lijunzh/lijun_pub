@@ -210,10 +210,53 @@
   month     = {07--09 Jul},
   publisher = {PMLR},
   abstract  = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer’s inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a stateof-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82% top-5 test error, exceeding the accuracy of human raters.},
+  file      = {ioffe15.pdf:http\://proceedings.mlr.press/v37/ioffe15.pdf:PDF},
   owner     = {lijun},
-  pdf       = {http://proceedings.mlr.press/v37/ioffe15.pdf},
   timestamp = {2017-12-30},
   url       = {http://proceedings.mlr.press/v37/ioffe15.html},
+}
+
+@InCollection{Desjardins2015,
+  author    = {Desjardins, Guillaume and Simonyan, Karen and Pascanu, Razvan and kavukcuoglu, koray},
+  title     = {Natural Neural Networks},
+  booktitle = {Advances in Neural Information Processing Systems 28},
+  publisher = {Curran Associates, Inc.},
+  year      = {2015},
+  editor    = {C. Cortes and N. D. Lawrence and D. D. Lee and M. Sugiyama and R. Garnett},
+  pages     = {2071--2079},
+  url       = {http://papers.nips.cc/paper/5953-natural-neural-networks.pdf},
+}
+
+@Article{Duchi2011,
+  author    = {Duchi, John and Hazan, Elad and Singer, Yoram},
+  title     = {Adaptive subgradient methods for online learning and stochastic optimization},
+  journal   = {Journal of Machine Learning Research},
+  year      = {2011},
+  volume    = {12},
+  number    = {Jul},
+  pages     = {2121--2159},
+  abstract  = {We present a new family of subgradient methods that dynamically incorporate knowledge of the geometry of the data observed in earlier iterations to perform more informative gradient-based learning. Metaphorically, the adaptation allows us to find needles in haystacks in the form of very predictive but rarely seen features. Our paradigm stems from recent advances in stochastic optimization and online learning which employ proximal functions to control the gradient steps of the algorithm. We describe and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal function that can be chosen in hindsight. We give several efficient algorithms for empirical risk minimization problems with common and important regularization functions and domain constraints. We experimentally study our theoretical analysis and show that adaptive subgradient methods outperform state-of-the-art, yet non-adaptive, subgradient algorithms. },
+  owner     = {lijun},
+  timestamp = {2017-12-30},
+}
+
+@Article{Tieleman2012,
+  author  = {Tieleman, Tijmen and Hinton, Geoffrey},
+  title   = {Lecture 6.5-rmsprop: Divide the gradient by a running average of its recent magnitude},
+  journal = {COURSERA: Neural networks for machine learning},
+  year    = {2012},
+  volume  = {4},
+  number  = {2},
+  pages   = {26--31},
+}
+
+@Article{Kingma2014,
+  author    = {Kingma, Diederik and Ba, Jimmy},
+  title     = {Adam: A method for stochastic optimization},
+  journal   = {arXiv preprint arXiv:1412.6980},
+  year      = {2014},
+  owner     = {lijun},
+  timestamp = {2017-12-30},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
