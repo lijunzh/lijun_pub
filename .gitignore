@@ -2,3 +2,4 @@
 *.sav
 *.bak
 .texpadtmp
+.DS_Store
