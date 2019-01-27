@@ -1,5 +1,25 @@
 % Encoding: UTF-8
 
+@Article{Morita1984,
+  title={Automatic detection of onset time of seismic waves and its confidence interval using the autoregressive model fitting},
+  author={Morita, Y. and Hamaguchi, H.},
+  journal={Zisin (J. Seism. Soc. Japan)},
+  volume={37},
+  pages={281--293},
+  year={1984}
+}
+
+@Article{Allen1978,
+author = {Allen, Rex V.},
+title = {Automatic earthquake recognition and timing from single traces},
+journal = {Bulletin of the Seismological Society of America},
+volume = {68},
+number = {5},
+pages = {1521},
+year = {1978},
+eprint = {/gsw/content_public/journal/bssa/68/5/0037110668050017/3/bssa0680051521.pdf},
+}
+
 @Article{Allen1982,
   author    = {Allen, Rex},
   title     = {Automatic phase pickers: Their present use and future prospects},
@@ -8,10 +28,7 @@
   volume    = {72},
   number    = {6B},
   pages     = {S225},
-  abstract  = {Automatic phase-picking algorithms are designed to detect a seismic signal on a single trace and to time the arrival of the signal precisely. Because of the requirement for precise timing, a phase-picking algorithm is inherently less sensitive than one designed only to detect the presence of a signal, but still can approach the performance of a skilled analyst. A typical algorithm filters the input data and then generates a function characterizing the seismic time series. This function may be as simple as the absolute value of the series, or it may be quite complex. Event detection is accomplished by comparing the function or its short-term average (STA) with a threshold value (THR), which is commonly some multiple of a long-term average (LTA) of a characteristic function. If the STA exceeds THR, a trigger is declared. If the event passes simple criteria, it is reported. Sensitivity, expected timing error, false-trigger rate, and false-report rate are interrelated measures of performance controlled by choice of the characteristic function and several operating parameters. At present, computational power limits most systems to one-pass, time-domain algorithms. Rapidly advancing semi-conductor technology, however, will make possible much more powerful multi-pass approaches incorporating frequency-domain detection and pseudo-offline timing.},
-  owner     = {lijun},
   subtitle  = {Current Reality and Future Prospects},
-  timestamp = {2017-12-26},
 }
 
 @Article{Baer1987,
@@ -22,9 +39,21 @@
   volume    = {77},
   number    = {4},
   pages     = {1437},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
 }
+
+@Article{Earle1997,
+	title = {Characterization of Global Seismograms Using an Automatic-Picking Algorithm},
+	journal = {Bulletin of the Seismological Society of America},
+	volume = {84},
+	number = {2},
+	year = {1994},
+	month = {Apr},
+	pages = {366-376},
+	keywords = {670-km discontinuity, beneath, converted, evolution, lithosphere, long-period, phases, polarization anisotropy, transition, upper-mantle, waves},
+	isbn = {0037-1106},
+	url = {<Go to ISI>://WOS:A1994NH74600012},
+	author = {Earle, P. S. and Shearer, P. M.}
+	}
 
 @Article{Sleeman1999,
   author    = {Sleeman, Reinoud and van Eck, Torild},
@@ -34,10 +63,7 @@
   volume    = {113},
   pages     = {265-275},
   month     = {06},
-  abstract  = {The onset of a seismic signal is determined through joint AR modeling of the noise and the seismic signal, and the application of the Akaike Information Criterion (AIC) using the onset time as parameter. This so-called AR-AIC phase picker has been tested successfully and implemented on the Z-component of the broadband station HGN to provide automatic P-phase picks for a rapid warning system. The AR-AIC picker is shown to provide accurate and robust automatic picks on a large experimental database. Out of 1109 P-phase onsets with signal-to-noise ratio (SNR) above 1 from local, regional and teleseismic earthquakes, our implementation detects 71% and gives a mean difference with manual picks of 0.1 s. An optimal version of the well-established picker of Baer and Kradolfer [Baer, M., Kradolfer, U., An automatic phase picker for local and teleseismic events, Bull. Seism. Soc. Am. 77 (1987) 1437–1445] detects less than 41% and gives a mean difference with manual picks of 0.3 s using the same dataset. },
   booktitle = {Physics of the Earth and Planetary Interiors},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
 }
 
 @Article{Dai1995,
@@ -48,12 +74,44 @@
   volume    = {120},
   number    = {3},
   pages     = {758-774},
-  abstract  = {A preliminary study is performed to test the ability of an artificial neural network (ANN) to detect and pick seismic arrivals from local earthquake data. This is achieved using three-component recordings by utilizing the vector modulus of these seismic records as the network input. A discriminant function, F(t), determined from the output of the trained ANN, is then employed to define the arrival onset. 877 pre-triggered recordings from two stations in a local earthquake network are analysed by an ANN trained with only nine P waves and nine noise segments. The data have a range of magnitudes (ML) from -0.3 to 1.0, and signal-to-noise ratios from 1 to 200. Comparing the results with manual picks, the ANN can accurately detect 93.9 per cent of the P waves and also 90.3 per cent of the S waves with a F(t) threshold set at 0.6 (maximum is 1.0). These statistics do not include false alarms due to other non-seismic signals or unusable records due to excessive noise. In 17.2 per cent of the cases the ANN detected false alarms prior to the event. Determining the onset times by using the local maximum of F(t), we find that 75.4 per cent of the P-wave estimates and 66.7 per cent of the S-wave estimates are within one sample increment (10 ms) of the reference data picked manually. Only 7.7 per cent of the P-wave estimates and 11.8 per cent of the S-wave estimates are inaccurate by more than five sample increments (50 ms). The majority of these records have distinct local P and S waves. The ANN also works for seismograms with low signal-to-noise ratios, where visual examination is difficult. The examples show the adaptive nature of the ANN, and that its ability to pick may be improved by adding or adjusting the training data. The ANN has potential as a tool to pick arrivals automatically. This algorithm has been adopted as a component in the early stages of our development of an automated subsystem to analyse local earthquake data. Further potential applications for the neural network include editing of poor traces (before present algorithm) and rejection of false alarms (after this present algorithm).
-},
-  doi       = {10.1111/j.1365-246X.1995.tb01851.x},
-  owner     = {lijun},
-  timestamp = {2017-12-26},
-  url       = { + http://dx.doi.org/10.1111/j.1365-246X.1995.tb01851.x},
+}
+
+@article{Pisarenko1987,
+title = "Statistical adaptive algorithms for estimation of onset moments of seismic phases",
+journal = "Physics of the Earth and Planetary Interiors",
+volume = "47",
+pages = "4 - 10",
+year = "1987",
+issn = "0031-9201",
+doi = "https://doi.org/10.1016/0031-9201(87)90062-8",
+url = "http://www.sciencedirect.com/science/article/pii/0031920187900628",
+author = "V.F. Pisarenko and A.F. Kushnir and I.V. Savin",
+}
+
+@Article{Takanami1991,
+author="Takanami, Tetsuo and Kitagawa, Genshiro",
+title="Estimation of the arrival times of seismic waves by multivariate time series model",
+journal="Annals of the Institute of Statistical Mathematics",
+year="1991",
+month="Sep",
+day="01",
+volume="43",
+number="3",
+pages="407--433",
+issn="1572-9052",
+doi="10.1007/BF00053364",
+url="https://doi.org/10.1007/BF00053364"
+}
+
+@article{Tarvainen1992,
+author = {Tarvainen, Matti},
+title = {Automatic seismogram analysis: Statistical phase picking and locating methods using one-station three-component data},
+journal = {Bulletin of the Seismological Society of America},
+volume = {82},
+number = {2},
+pages = {860},
+year = {1992},
+eprint = {/gsw/content_public/journal/bssa/82/2/0037110682020013/3/bssa0820020860.pdf}
 }
 
 @Article{Murat1992,
@@ -65,11 +123,8 @@
   number    = {6},
   pages     = {587--604},
   issn      = {1365-2478},
-  abstract  = {A back-propagation neural network is successfully applied to pick first arrivals (first breaks) in a background of noise. Network output is a decision whether each half-cycle on the trace is a first or not. 3D plots of the input attributes allow evaluation of the attributes for use in a neural network. Clustering and separation of first break from non-break data on the plots indicate that a neural network solution is possible, and therefore the attributes are suitable as network input.Application of the trained network to actual seismic data (Vibroseis and Poulter sources) demonstrates successful automated first-break selection for the following four attributes used as neural network input: (1) peak amplitude of a half-cycle; (2) amplitude difference between the peak value of the half-cycle and the previous (or following) half-cycle; (3) rms amplitude ratio for a data window (0.3 s) before and after the half-cycle; (4) rms amplitude ratio for a data window (0.06 s) on adjacent traces. The contribution of the attributes based on adjacent traces (4) was considered significant and future work will emphasize this aspect.},
   doi       = {10.1111/j.1365-2478.1992.tb00543.x},
-  owner     = {lijun},
   publisher = {Blackwell Publishing Ltd},
-  timestamp = {2017-12-26},
   url       = {http://dx.doi.org/10.1111/j.1365-2478.1992.tb00543.x},
 }
 
@@ -83,11 +138,8 @@
   pages     = {1395-1404},
   month     = {Jun},
   issn      = {0196-2892},
-  abstract  = {Summary form only given. Strong light-matter coupling has been recently successfully explored in the GHz and THz [1] range with on-chip platforms. New and intriguing quantum optical phenomena have been predicted in the ultrastrong coupling regime [2], when the coupling strength Ω becomes comparable to the unperturbed frequency of the system ω. We recently proposed a new experimental platform where we couple the inter-Landau level transition of an high-mobility 2DEG to the highly subwavelength photonic mode of an LC meta-atom [3] showing very large Ω/ωc = 0.87. Our system benefits from the collective enhancement of the light-matter coupling which comes from the scaling of the coupling Ω ∝ √n, were n is the number of optically active electrons. In our previous experiments [3] and in literature [4] this number varies from 104-103 electrons per meta-atom. We now engineer a new cavity, resonant at 290 GHz, with an extremely reduced effective mode surface Seff = 4 × 10-14 m2 (FE simulations, CST), yielding large field enhancements above 1500 and allowing to enter the few (<;100) electron regime. It consist of a complementary metasurface with two very sharp metallic tips separated by a 60 nm gap (Fig.1(a, b)) on top of a single triangular quantum well. THz-TDS transmission experiments as a function of the applied magnetic field reveal strong anticrossing of the cavity mode with linear cyclotron dispersion. Measurements for arrays of only 12 cavities are reported in Fig.1(c). On the top horizontal axis we report the number of electrons occupying the topmost Landau level as a function of the magnetic field. At the anticrossing field of B=0.73 T we measure approximately 60 electrons ultra strongly coupled (Ω/ω- ||},
   doi       = {10.1109/TGRS.2002.800438},
   keywords  = {earthquakes;geophysical signal processing;geophysical techniques;seismology;P phase arrival;PAI-S/K;algorithm;arrival;automatic identification;earthquake;geophysical measurement technique;higher-order statistics;identification scheme;kurtosis;phase arrival identification;robust automatic method;seismic P phase;seismic event;seismic signal processing;seismology;skewness;skewness kurtosis;Earth;Earthquakes;Gaussian noise;Higher order statistics;Humans;Phase noise;Robustness;Seismic waves;Seismology;Signal processing algorithms},
-  owner     = {lijun},
-  timestamp = {2017-12-26},
 }
 
 @Article{Nippress2010,
@@ -99,8 +151,6 @@
   number    = {2},
   pages     = {911-925},
   doi       = {10.1111/j.1365-246X.2010.04531.x},
-  owner     = {lijun},
-  timestamp = {2017-12-26},
 }
 
 @Article{Cichowicz1993,
@@ -111,9 +161,7 @@
   volume    = {83},
   number    = {1},
   pages     = {180--189},
-  owner     = {lijun},
   publisher = {Seismological Society of America},
-  timestamp = {2017-12-26},
 }
 
 @Article{Rosenberger2010,
@@ -124,9 +172,7 @@
   volume    = {100},
   number    = {3},
   pages     = {1252--1262},
-  owner     = {lijun},
   publisher = {Seismological Society of America},
-  timestamp = {2017-12-26},
 }
 
 @Article{Kurzon2014,
@@ -137,9 +183,7 @@
   volume    = {104},
   number    = {4},
   pages     = {1696--1708},
-  owner     = {lijun},
   publisher = {Seismological Society of America},
-  timestamp = {2017-12-26},
 }
 
 @Article{Yoon2015,
@@ -149,7 +193,6 @@
   year      = {2015},
   volume    = {1},
   number    = {11},
-  abstract  = {Seismology is experiencing rapid growth in the quantity of data, which has outpaced the development of processing algorithms. Earthquake detection{\textemdash}identification of seismic events in continuous data{\textemdash}is a fundamental operation for observational seismology. We developed an efficient method to detect earthquakes using waveform similarity that overcomes the disadvantages of existing detection methods. Our method, called Fingerprint And Similarity Thresholding (FAST), can analyze a week of continuous seismic waveform data in less than 2 hours, or 140 times faster than autocorrelation. FAST adapts a data mining algorithm, originally designed to identify similar audio clips within large databases; it first creates compact {\textquotedblleft}fingerprints{\textquotedblright} of waveforms by extracting key discriminative features, then groups similar fingerprints together within a database to facilitate fast, scalable search for similar fingerprint pairs, and finally generates a list of earthquake detections. FAST detected most (21 of 24) cataloged earthquakes and 68 uncataloged earthquakes in 1 week of continuous data from a station located near the Calaveras Fault in central California, achieving detection performance comparable to that of autocorrelation, with some additional false detections. FAST is expected to realize its full potential when applied to extremely long duration data sets over a distributed network of seismic stations. The widespread application of FAST has the potential to aid in the discovery of unexpected seismic signals, improve seismic monitoring, and promote a greater understanding of a variety of earthquake processes.},
   doi       = {10.1126/sciadv.1501057},
   publisher = {American Association for the Advancement of Science},
   url       = {http://advances.sciencemag.org/content/1/11/e1501057},
@@ -164,11 +207,8 @@
   number    = {Supplement C},
   pages     = {274 - 280},
   issn      = {0012-821X},
-  abstract  = {Abstract A series of earthquakes in 2011 near Youngstown, OH, has been a focal point for discussions of seismicity induced by a nearby wastewater disposal well. Utilizing an efficient waveform template matching procedure, the optimal correlation template to study the Youngstown sequence was identified by varying parameters such as the stations utilized, frequency passband, and seismogram length. A catalog composed of 566 events was identified between January 2011 and February 2014. Double-difference relocation refines seismicity to a ∼800 m linear streak from the Northstar 1 injection well to the WSW along the same strike as the fault plane of the largest event. Calculated Gutenberg–Richter b-values are consistent with trends observed in other regions with seismicity induced by fluid injection.},
   doi       = {https://doi.org/10.1016/j.epsl.2014.08.033},
   keywords  = {induced seismicity, wastewater injection, template matching},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
   url       = {http://www.sciencedirect.com/science/article/pii/S0012821X14005391},
 }
 
@@ -193,8 +233,6 @@
   number    = {2},
   pages     = {763},
   doi       = {10.1785/0120100103},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
   url       = { + http://dx.doi.org/10.1785/0120100103},
 }
 
@@ -203,8 +241,6 @@
   title       = {Subspace detectors: theory},
   institution = {Lawrence Livermore National Laboratory (LLNL), Livermore, CA},
   year        = {2006},
-  owner       = {lijun},
-  timestamp   = {2017-12-27},
 }
 
 @Article{Gibbons2006,
@@ -216,8 +252,6 @@
   number    = {1},
   pages     = {149-166},
   doi       = {10.1111/j.1365-246X.2006.02865.x},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
   url       = { + http://dx.doi.org/10.1111/j.1365-246X.2006.02865.x},
 }
 
@@ -229,8 +263,6 @@
   volume    = {88},
   number    = {1},
   pages     = {95},
-  owner     = {lijun},
-  timestamp = {2017-12-27},
   url       = { + http://dx.doi.org/},
 }
 
@@ -259,7 +291,6 @@ doi = {10.1002/2017GL074677},
 pages = {9276--9282},
 keywords = {machine learning, earthquake prediction, laboratory earthquakes, acoustic signal identification, earthquake precursors},
 year = {2017},
-abstract = {We apply machine learning to data sets from shear laboratory experiments, with the goal of identifying hidden signals that precede earthquakes. Here we show that by listening to the acoustic signal emitted by a laboratory fault, machine learning can predict the time remaining before it fails with great accuracy. These predictions are based solely on the instantaneous physical characteristics of the acoustical signal and do not make use of its history. Surprisingly, machine learning identifies a signal emitted from the fault zone previously thought to be low-amplitude noise that enables failure forecasting throughout the laboratory quake cycle. We infer that this signal originates from continuous grain motions of the fault gouge as the fault blocks displace. We posit that applying this approach to continuous seismic data may lead to significant advances in identifying currently unknown signals, in providing new insights into fault physics, and in placing bounds on fault failure times.},
 }
 
 @Article{Akram2016,
@@ -272,8 +303,6 @@ abstract = {We apply machine learning to data sets from shear laboratory experim
   pages     = {KS71-KS91},
   doi       = {10.1190/geo2014-0500.1},
   eprint    = {https://doi.org/10.1190/geo2014-0500.1},
-  owner     = {lijun},
-  timestamp = {2018-01-09},
   url       = {https://doi.org/10.1190/geo2014-0500.1},
 }
 
@@ -300,7 +329,6 @@ doi = "https://doi.org/10.1016/j.epsl.2016.12.014",
 url = "http://www.sciencedirect.com/science/article/pii/S0012821X16307270",
 author = "Andrew A. Delorey and Nicholas J. van der Elst and Paul A. Johnson",
 keywords = "seismology, earthquake triggering, California, Earth tides, pore pressure",
-abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitative information regarding the fault's stress state, poroelastic properties, and may be significant for our understanding of seismic hazard. To date, studies of regional or global earthquake catalogs have had only modest successes in identifying tidal triggering. We posit that the smallest events that may provide additional evidence of triggering go unidentified and thus we developed a technique to improve the identification of very small magnitude events. We identify events applying a method known as inter-station seismic coherence where we prioritize detection and discrimination over characterization. Here we show tidal triggering of earthquakes on the San Andreas Fault. We find the complex interaction of semi-diurnal and fortnightly tidal periods exposes both stress threshold and critical state behavior. Our findings reveal earthquake nucleation processes and pore pressure conditions – properties of faults that are difficult to measure, yet extremely important for characterizing earthquake physics and seismic hazards."
 }
 
 @Article{Ross2014b,
@@ -312,8 +340,6 @@ abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitat
   number    = {1},
   pages     = {458-463},
   doi       = {10.1093/gji/ggt516},
-  owner     = {lijun},
-  timestamp = {2018-04-07},
   url       = {http://dx.doi.org/10.1093/gji/ggt516},
 }
 
@@ -325,9 +351,7 @@ abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitat
   volume    = {2},
   number    = {12},
   pages     = {877},
-  owner     = {lijun},
   publisher = {Nature Publishing Group},
-  timestamp = {2018-04-07},
 }
 
 @Article{Brown2008,
@@ -337,9 +361,7 @@ abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitat
   year      = {2008},
   volume    = {35},
   number    = {16},
-  owner     = {lijun},
   publisher = {Wiley Online Library},
-  timestamp = {2018-04-07},
 }
 
 @Article{Peng2006,
@@ -349,9 +371,7 @@ abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitat
   year      = {2006},
   volume    = {33},
   number    = {17},
-  owner     = {lijun},
   publisher = {Wiley Online Library},
-  timestamp = {2018-04-07},
 }
 
 @Article{Kagan2004,
@@ -362,9 +382,7 @@ abstract = "Tidal triggering of earthquakes is hypothesized to provide quantitat
   volume    = {94},
   number    = {4},
   pages     = {1207--1228},
-  owner     = {lijun},
   publisher = {Seismological Society of America},
-  timestamp = {2018-04-07},
 }
 
 @article{Jurkevics1988,
@@ -390,9 +408,67 @@ year = {2013},
 keywords = {earthquake triggering, stress shadow, Parkfield},
 doi = {10.1002/jgrb.50271},
 url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/jgrb.50271},
-abstract = {Earthquakes trigger other earthquakes, but the physical mechanism of the triggering is currently debated. Most studies of earthquake triggering rely on earthquakes listed in catalogs, which are known to be incomplete around the origin times of large earthquakes and therefore missing potentially triggered events. Here we apply a waveform matched‐filter technique to systematically detect earthquakes along the Parkfield section of the San Andreas Fault from 46 days before to 31 days after the nearby 2003 Mw6.5 San Simeon earthquake. After removing all possible false detections, we identify ~8 times more earthquakes than in the Northern California Seismic Network catalog. The newly identified events along the creeping section of the San Andreas Fault show a statistically significant decrease following the San Simeon main shock, which correlates well with the negative static stress changes (i.e., stress shadow) cast by the main shock. In comparison, the seismicity rate around Parkfield increased moderately where the static stress changes are positive. The seismicity rate changes correlate well with the static shear stress changes induced by the San Simeon main shock, suggesting a low friction in the seismogenic zone along the Parkfield section of the San Andreas Fault.}
 }
 
+@Article{Rost2002,
+author = {Rost, Sebastian and Thomas, Christine},
+title = {ARRAY SEISMOLOGY: METHODS AND APPLICATIONS},
+journal = {Reviews of Geophysics},
+volume = {40},
+number = {3},
+pages = {2-1-2-27},
+keywords = {array seismology, array methods, geophysics, earthquake and nuclear explosion seismology},
+doi = {10.1029/2000RG000100},
+url = {https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2000RG000100},
+eprint = {https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2000RG000100},
+year = {2002}
+}
 
+@Article{Almendros1999,
+author = {Almendros, Javier and Ibáñez, Jesús M. and Alguacil, Gerardo and Del Pezzo, Edoardo},
+title = {Array analysis using circular-wave-front geometry:an application to locate the nearby seismo-volcanic source},
+journal = {Geophysical Journal International},
+volume = {136},
+number = {1},
+pages = {159-170},
+year = {1999},
+doi = {10.1046/j.1365-246X.1999.00699.x},
+URL = {http://dx.doi.org/10.1046/j.1365-246X.1999.00699.x},
+eprint = {/oup/backfile/content_public/journal/gji/136/1/10.1046/j.1365-246x.1999.00699.x/2/136-1-159.pdf}
+}
+
+@Article{Zhang2014,
+  title={Real-time earthquake monitoring using a search engine method},
+  author={Zhang, Jie and Zhang, Haijiang and Chen, Enhong and Zheng, Yi and Kuang, Wenhuan and Zhang, Xiong},
+  journal={Nature communications},
+  volume={5},
+  pages={5664},
+  year={2014},
+  publisher={Nature Publishing Group}
+}
+
+@Article{Aguiar2014,
+  title={PageRank for earthquakes},
+  author={Aguiar, Ana C and Beroza, Gregory C},
+  journal={Seismological Research Letters},
+  volume={85},
+  number={2},
+  pages={344--350},
+  year={2014},
+  publisher={Seismological Society of America}
+}
+
+@INPROCEEDINGS{Baluja2006,
+author={S. Baluja and M. Covell},
+booktitle={The 3rd European Conference on Visual Media Production (CVMP 2006) - Part of the 2nd Multimedia Conference 2006},
+title={Content Fingerprinting Using Wavelets},
+year={2006},
+volume={},
+number={},
+pages={198-207},
+keywords={audio databases;audio signal processing;computer vision;fingerprint identification;image matching;image retrieval;very large databases;wavelet transforms;content fingerprinting;audio identification;computer vision;large-scale data stream processing;wavelet transform;image matching;image retrieval},
+doi={10.1049/cp:20061964},
+ISSN={0537-9989},
+month={Nov},}
 
 @Comment{jabref-meta: databaseType:bibtex;}
