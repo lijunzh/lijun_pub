@@ -3,3 +3,4 @@
 *.bak
 .texpadtmp
 .DS_Store
+/tags
